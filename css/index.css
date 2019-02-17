@@ -10,6 +10,7 @@ ul.issuepool .header {
 
 ul.issuepool li {
     padding-top: 4px;
+    padding-bottom: 4px;
     color: #000000;
     background-color: aliceblue; /* content background*/
     display: block;
@@ -64,7 +65,7 @@ ul.issuepool dd {
 dd.posts,
 dd.comments {
     width: 95px;
-    text-align: left;
+    text-align: center;
 }
 
 

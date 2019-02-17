@@ -1,5 +1,5 @@
 /*to clear the default browser properties of <nav> */
-nav dl,nav dt,nav dd,nav ul,nav li, nav, ul {
+nav dl,nav dt,nav dd,nav ul,nav li, nav, ul, dl, dt, dd {
     margin:0;
     padding:0;
     border:0;
@@ -15,18 +15,20 @@ nav dl,nav dt,nav dd,nav ul,nav li, nav, ul {
 
 /*actual css start*/
 nav.NavTab ul {
+    margin-top: 2px;
     display: table;/*to center nav buttons */
     text-align:center;
     list-style-type: none;/*to remove the list bullets*/
     width: 100vw;/*shows navigation bar covering full width of body*/
     max-width: 100%;/*maximum width with respect to the browser resolution*/
-    background-color: #6d7a8a; /*navigation background color*/
+    background-image:linear-gradient(to left,rgba(0,20,120,0.1),rgba(0,0,120,0.5)); /*navigation background color*/
 }
 
 nav.NavTab ul li {
     display: table-cell;/*parent display is table, will auto center the buttons*/
     padding-right: 5%;/*change to change the spacing between buttons*/
     padding-left: 5%;/*change to change the spacing between buttons*/
+    width:inherit;
 }
 
 nav.NavTab ul li a {    /*inside the button*/
@@ -34,12 +36,17 @@ nav.NavTab ul li a {    /*inside the button*/
     padding-top: 12px;/*height of button*/
     padding-bottom: 12px;/*height of button*/
     width: 100%;/*percentage of <li> covered by <a>*/
-    background-color: #008b8b; /*navigation button color*/
+    background-image:linear-gradient(to right,rgba(0,60,220,1),rgba(0,0,255,0)); /*navigation button color*/
     color: azure;/*text color*/
     text-decoration-line: none;/*remove underlines from links*/
-    border: outset #6d7a8a; /*navigation border color*/
+    border: inset rgba(109, 122, 138, 0.6); /*navigation border color*/
     font-size: 12px;
 
+}
+
+a:hover{
+    transform: translateY(-2px);
+    border-bottom-width: 4px;
 }
 
 a:active {  /*animate clicking by moving <a> down by 1px when clicked(:active)*/
