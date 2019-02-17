@@ -1,0 +1,63 @@
+/*to clear the default browser properties of <nav> */
+nav dl,nav dt,nav dd,nav ul,nav li, nav, ul {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/*actual css start*/
+nav.NavTab ul {
+    display: table;/*to center nav buttons */
+    text-align:center;
+    list-style-type: none;/*to remove the list bullets*/
+    width: 100vw;/*shows navigation bar covering full width of body*/
+    max-width: 100%;/*maximum width with respect to the browser resolution*/
+    background-color: #6d7a8a; /*navigation background color*/
+}
+
+nav.NavTab ul li {
+    display: table-cell;/*parent display is table, will auto center the buttons*/
+    padding-right: 5%;/*change to change the spacing between buttons*/
+    padding-left: 5%;/*change to change the spacing between buttons*/
+}
+
+nav.NavTab ul li a {    /*inside the button*/
+    display: inline-block;/*more lenient than a block element*/
+    padding-top: 12px;/*height of button*/
+    padding-bottom: 12px;/*height of button*/
+    width: 100%;/*percentage of <li> covered by <a>*/
+    background-color: #008b8b; /*navigation button color*/
+    color: azure;/*text color*/
+    text-decoration-line: none;/*remove underlines from links*/
+    border: outset #6d7a8a; /*navigation border color*/
+    font-size: 12px;
+
+}
+
+a:active {  /*animate clicking by moving <a> down by 1px when clicked(:active)*/
+    transform: translateY(1px);
+    border-bottom-width: 0px;
+}
+
+body{   /*common for all pages*/
+    font-family: sans-serif;
+    font-size: 10px;
+    line-height: 1;
+    word-wrap: break-word;
+    margin:0;
+}
+
+@media only screen and (max-width: 800px) {
+     body.body {
+            word-wrap: normal;
+        }
+    }
+}

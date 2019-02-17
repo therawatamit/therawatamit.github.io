@@ -1,12 +1,119 @@
-﻿
-th.title{
-    width:70vw;
-    text-align:left;
+﻿ul.issuepool {  /*set of unordered list for categories*/
+    display: block; /**/
+    list-style-type: none;
+    margin:2% 5%;
 }
 
-td.title{
-    width:70vw;
-    text-align:left;
+ul.issuepool .header {
+    border-bottom: 2px solid #04e;
+}
+
+ul.issuepool li {
+    padding-top: 4px;
+    color: #000000;
+    background-color: aliceblue; /* content background*/
+    display: block;
+    list-style-type: none;
+    margin: 0;
+}
+
+ul.issuepool dl {
+    position: relative;
+    overflow: hidden;
+}
+
+li.header dl.full-row dt,
+li.header dl.full-row dd {
+    font-size: 11px;
 }
 
 
+li.header dt,
+li.header dd {
+    
+    color: #009494;
+    line-height: 1em;
+    border-left-width: 0;
+    margin: 2px 0 -4px 0;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    font-size: 1em;
+    font-family: sans-serif;
+    text-transform: uppercase;
+}
+
+dl.full-row dt{
+    margin-left: 5%;
+}
+
+li.header dd {
+    padding-left: 1px;
+    box-sizing: border-box;
+}
+
+ul.issuepool dd {
+    border-left: 1px solid transparent;
+    padding: 4px 0;
+}
+
+.header dt
+{
+    text-align: left;
+}
+
+dd.posts,
+dd.comments {
+    width: 95px;
+    text-align: left;
+}
+
+
+
+li.header dt {
+    font-weight: bold;
+    width: 100%;
+    margin-right: -440px;
+}
+
+ul.issuepool dt,
+ul.issuepool dd {
+
+    display: block;
+    float: left;
+
+}
+
+dd.lastpost {
+    width: 250px;
+}
+
+
+li.header dl.full-row dt .list-content {
+
+    padding-left: 0;
+    padding-right: 50px;
+
+}
+
+li.header dt .list-content {
+    margin-right: 440px;
+}
+
+dd.details > span {
+    display: block;
+    padding-left: 5px;
+}
+
+@media only screen and (max-width: 800px) {
+    
+    ul.issuepool{
+        margin: 0;
+    }
+    ul.issuepool dd.posts,ul.issuepool dd.comments,ul.issuepool dd.details {
+        display: none;
+      }
+    ul.issuepool dt.rdw div.list-content{
+        text-align: center;
+        width:100%;
+    }
+}
