@@ -3428,16 +3428,16 @@ body {
 
   #nav-menu{
     position:initial;
-    flex-direction:row;
-    width:auto;
+    flex-direction:column;
+    width:100vb;
   }
 
 @media (min-width: 768px) {
 
   #nav-menu{
     position:relative;
-    flex-direction:column;
-    width:100vb;
+    flex-direction:row;
+    width:auto;
   }
   
   .md\:absolute {
