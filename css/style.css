@@ -3430,6 +3430,7 @@ body {
     position:initial;
     flex-direction:column;
     width:100vb;
+    display:flex;
   }
 
 @media (min-width: 768px) {
