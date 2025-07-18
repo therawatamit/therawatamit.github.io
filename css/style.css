@@ -3427,6 +3427,13 @@ body {
 }
 
 @media (min-width: 768px) {
+
+  #nav-menu{
+    position:relative;
+    flex-direction:column;
+    width:100vb;
+  }
+  
   .md\:absolute {
     position: absolute;
   }
@@ -3455,6 +3462,10 @@ body {
     width: auto;
   }
 
+  .md\:h-auto {
+    height: auto;
+  }
+  
   .md\:max-w-\[420px\] {
     max-width: 420px;
   }
