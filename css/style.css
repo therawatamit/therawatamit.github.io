@@ -3426,6 +3426,12 @@ body {
   }
 }
 
+  #nav-menu{
+    position:initial;
+    flex-direction:row;
+    width:auto;
+  }
+
 @media (min-width: 768px) {
 
   #nav-menu{
